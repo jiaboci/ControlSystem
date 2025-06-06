@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 摩擦力试验机
+namespace 机械双动
 {
     static class Program
     {

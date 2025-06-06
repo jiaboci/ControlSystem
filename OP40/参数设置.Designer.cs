@@ -1,4 +1,4 @@
-﻿namespace OP40
+﻿namespace 机械双动
 {
     partial class 参数设置
     {

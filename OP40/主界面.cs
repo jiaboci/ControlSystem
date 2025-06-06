@@ -1,5 +1,4 @@
-﻿using OP40;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,8 +9,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 机械双动;
 
-namespace 摩擦力试验机
+namespace 机械双动
 {
     public partial class 主界面 : Form
     {
@@ -62,24 +62,7 @@ namespace 摩擦力试验机
         }
         private void mu_1_参数设置_Click(object sender, EventArgs e)
         {
-            if (!formempte) { return; }
-            foreach (Form frm in Application.OpenForms)
-            {
-                if (frm is 配置参数 || frm is 参数设置)
-                {
-                    frm.Activate();
-                    frm.WindowState = FormWindowState.Normal;
-                    return;
-                }
-            }
-            formempte = false;
-            密码 _password = new 密码();
-            _password.ShowDialog();
-            if (密码.bl密码正确性)
-            {
-                参数设置 frm = new 参数设置();
-                frm.Show();
-            }
+            
         }
 
         private void mu_1_关于_Click(object sender, EventArgs e)
@@ -101,7 +84,7 @@ namespace 摩擦力试验机
         {
             formempte = false;
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "文件|*.*";
+            ofd.Filter = "文件|*.json";
             ofd.Multiselect = false;
             if(ofd.ShowDialog() == DialogResult.OK)
             {
@@ -117,11 +100,6 @@ namespace 摩擦力试验机
             fileAdress = "";
             测试界面 form = new 测试界面();
             CreatMyForm(form);
-        }
-
-        private void mu_2_保存测试数据_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void CreatMyForm(Form form)

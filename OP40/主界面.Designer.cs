@@ -1,4 +1,4 @@
-﻿namespace 摩擦力试验机
+﻿namespace 机械双动
 {
     partial class 主界面
     {

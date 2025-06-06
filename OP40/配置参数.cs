@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OP40
+namespace 机械双动
 {
     public partial class 配置参数 : Form
     {

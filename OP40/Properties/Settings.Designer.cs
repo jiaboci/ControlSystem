@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OP40.Properties {
+namespace 机械双动.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
